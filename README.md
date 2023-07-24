@@ -63,11 +63,10 @@ The user clicks on the avatar to open a popover which allows the user to choose 
 
 (you may adjust the paths to your needs of course)
 
-* Requested browser compatibility: IE11 and up, current versions of Chrome, FF, Safari
 * You may split up the main component in as many sub-components as you see fit
 * Think of it as a component that will end up in a large, scalable react app. Consider this when writing HTML and CSS as well.
 * You're free to use as many third party JS libraries that you see fit
-* You're NOT allowed to use any third party CSS libraries
+* You're free to use any preferred CSS libraries or frameworks
 * You're free to use any build tools that you like (including CSS pre/post-processors). Do not focus on the tooling though. Choose tools that get you going quickly.
 * Only use the image assets given in this repository and do not modify the files in any way
 * Use proper semantics when writing HTML (for example: the avatar list has to be a `<ul>` and all the children just `<li>` elements)
