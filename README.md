@@ -1,5 +1,7 @@
 ## React frontend coding challenge
 
+Fork this repository to your own GitHub profile and work there to get started. You can share your repo link after completion or submit a pull request to this repository.
+
 You'll be building a simple react component: an avatar picker. It looks like this:
 
 ![Pick an avatar](./avatar_picker.gif "Pick me!")
