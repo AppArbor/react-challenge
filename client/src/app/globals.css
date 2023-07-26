@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .popover {
+    background: rgb(44, 48, 51);
+  }
+}
