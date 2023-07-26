@@ -43,6 +43,7 @@ export const AvatarsModal = ({
                   <Avatar
                     avatarData={avatar}
                     className={clsx(
+                      // TODO: improve the logic for the styling here depending on the different states: (hover, loading, selected, etc) perhaps use a wrapper or a different property
                       'border border-[#9ba0a3] hover:border-[3px]',
                       loading &&
                         pickedAvatarId !== avatar.id &&
