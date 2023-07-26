@@ -5,7 +5,7 @@ export const Avatar = ({ avatarData, className, ...rest }) => {
     <>
       <div
         className={clsx(
-          'rounded-full overflow-hidden h-[60px] w-[60px]',
+          'rounded-full overflow-hidden h-[60px] w-[60px] hover:border-[#9ba0a3]',
           className,
         )}
         {...rest}

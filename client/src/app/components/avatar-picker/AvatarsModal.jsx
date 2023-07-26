@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { useChangeAvatar } from '@/app/hooks/useChangeAvatar'
+import { useChangeAvatar } from '@/app/hooks/avatarHooks'
 import { Avatar } from './Avatar'
 import clsx from 'clsx'
 
@@ -43,11 +43,11 @@ export const AvatarsModal = ({
                   <Avatar
                     avatarData={avatar}
                     className={clsx(
-                      'border border-[#9ba0a3] hover:border-[#9ba0a3] hover:border-[3px]',
+                      'border border-[#9ba0a3] hover:border-[3px]',
                       loading &&
                         pickedAvatarId !== avatar.id &&
                         updatingAvatarId === avatar.id &&
-                        'border-[red] border-[3px]',
+                        'border-blue-300 border-[3px] hover:border-blue-300 border-t-transparent hover:border-t-transparent',
                       pickedAvatarId === avatar.id &&
                         'border-[3px] border-[#7aa1b2]',
                     )}

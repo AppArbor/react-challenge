@@ -34,3 +34,7 @@ export const useChangeAvatar = () => {
 
   return { changeAvatar, loading }
 }
+
+export const useGetAvatars = () => {
+  return { avatarList }
+}
