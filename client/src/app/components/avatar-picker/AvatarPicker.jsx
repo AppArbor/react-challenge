@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Avatar } from './Avatar'
 import { AvatarsModal } from './AvatarsModal'
+import { useChangeAvatar } from '@/app/hooks/useChangeAvatar'
 
 const AvatarPicker = ({ avatarList }) => {
   const [pickedAvatar, setPickedAvatar] = useState(avatarList[0])
@@ -12,10 +13,10 @@ const AvatarPicker = ({ avatarList }) => {
     setShowingOptions(true)
   }
 
-  const handlePickAvatar = (avatar) => {
-    setPickedAvatar(avatar)
+  const handleCloseModal = () => {
     setShowingOptions(false)
   }
+
   return (
     <section className="flex flex-col items-center p-4 relative">
       <button type="button" onClick={handleOpenModal}>
@@ -24,7 +25,9 @@ const AvatarPicker = ({ avatarList }) => {
       {showingOptions && (
         <AvatarsModal
           avatarList={avatarList}
-          handlePickAvatar={handlePickAvatar}
+          closeModal={handleCloseModal}
+          pickedAvatarId={pickedAvatar.id}
+          setPickedAvatar={setPickedAvatar}
         />
       )}
     </section>

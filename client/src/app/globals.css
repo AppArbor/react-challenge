@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .popover {
-    background: rgb(44, 48, 51);
+@layer base {
+  li {
+    box-sizing: content-box;
   }
 }
